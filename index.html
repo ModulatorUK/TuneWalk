@@ -15,6 +15,7 @@
       background: black;
     }
 
+    /* VIDEO FIX */
     .video-bg {
       position: fixed;
       top: 0;
@@ -22,7 +23,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      z-index: -2;
+      z-index: 0; /* IMPORTANT: NOT NEGATIVE */
     }
 
     .overlay {
@@ -32,11 +33,12 @@
       width: 100%;
       height: 100%;
       background: rgba(0,0,0,0.6);
-      z-index: -1;
+      z-index: 1;
     }
 
     .content {
       position: relative;
+      z-index: 2; /* ABOVE EVERYTHING */
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -80,7 +82,7 @@
 <body>
 
   <!-- VIDEO -->
-  <video class="video-bg" autoplay muted loop playsinline preload="auto" id="bg-video">
+  <video class="video-bg" autoplay muted loop playsinline preload="auto">
     <source src="video.mp4" type="video/mp4">
   </video>
 
@@ -101,17 +103,6 @@
       Launching in London soon
     </div>
   </div>
-
-  <!-- FORCE VIDEO PLAY -->
-  <script>
-    window.addEventListener("load", () => {
-      const video = document.getElementById("bg-video");
-      if (video) {
-        video.muted = true;
-        video.play().catch(() => {});
-      }
-    });
-  </script>
 
 </body>
 </html>
