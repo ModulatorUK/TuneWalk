@@ -1,112 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TuneWalk</title>
-
-  <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="favicon.png" />
-
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      overflow: hidden;
-      background: black;
-    }
-
-    .video-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
-
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.6);
-      z-index: 1;
-    }
-
-    .content {
-      position: relative;
-      z-index: 2;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-    }
-
-    .logo {
-      font-size: 48px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .mockup {
-      width: 390px;
-      max-width: 80%;
-      margin-bottom: 10px;
-      animation: float 6s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-15px); }
-      100% { transform: translateY(0px); }
-    }
-
-    .headline {
-      font-size: 28px;
-      margin-bottom: 8px;
-      line-height: 1.3;
-    }
-
-    .sub {
-      font-size: 16px;
-      opacity: 0.8;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TuneWalk – London’s music history, on foot</title>
+<meta name="description" content="Audio walking tours of London’s music history, the city’s independent record stores and tonight’s gigs, together in one app.">
+<meta name="theme-color" content="#0A0B0D">
+<link rel="icon" type="image/png" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TuneWalk">
+<meta property="og:title" content="TuneWalk – London’s music history, on foot">
+<meta property="og:description" content="Audio walking tours of London’s music history, the city’s independent record stores and tonight’s gigs, together in one app.">
+<meta property="og:url" content="https://tunewalk.app/">
+<meta property="og:image" content="https://tunewalk.app/assets/og-home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TuneWalk – London’s music history, on foot">
+<meta name="twitter:description" content="Audio walking tours of London’s music history, the city’s independent record stores and tonight’s gigs, together in one app.">
+<meta name="twitter:image" content="https://tunewalk.app/assets/og-home.png">
 </head>
-
 <body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/logo-mark-256.png" alt="">TuneWalk</a>
+  <nav class="nav-links">
+    <a href="tour/punk-revolution/index.html">Tours</a>
+    <a class="hide-sm" href="faq/index.html">FAQ</a>
+    <a href="mailto:support@tunewalk.app">Contact</a>
+  </nav>
+</div></header>
 
-  <!-- VIDEO -->
-  <video class="video-bg" autoplay muted loop playsinline preload="auto">
-    <source src="video.mp4" type="video/mp4">
-  </video>
-
-  <!-- OVERLAY -->
-  <div class="overlay"></div>
-
-  <!-- CONTENT -->
-  <div class="content">
-    <img src="mockup.png" class="mockup" />
-
-    <div class="logo">TuneWalk</div>
-
-    <div class="headline">
-      Discover London<br>
-      through its music history
+<main>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <div class="eyebrow">London · music heritage</div>
+    <h1 style="margin-top:14px">Walk through <span>music history.</span></h1>
+    <p class="lead">Stand outside the doors where punk began, hear the story in your headphones, then find a record shop round the corner and a gig tonight. TuneWalk puts London’s music past and present in one app.</p>
+    <div class="hero-cta">
+      <span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.86-.76-1.47.02-2.83.86-3.59 2.17-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.83-1.22 1.17-2.4 1.19-2.46-.03-.01-2.28-.87-2.3-3.46zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></svg> Coming soon to the App Store</span>
+      <a class="btn btn-dark" href="tour/punk-revolution/index.html">See the first tour</a>
     </div>
+    <div class="hero-note">Free to download. No account needed.</div>
+  </div>
+  <div>
+    <div class="phone"><div class="screen">
+      <div class="island"></div>
+      <div class="scr-head"><div class="eyebrow">London · audio tour</div><div class="t">Punk Revolution</div></div>
+      <div class="scr-progress"><span>8 of 35 stops</span><span class="bar"><i></i></span></div>
+      <div class="row"><span class="num done">✓</span><span class="thumb g1"></span><span class="tt"><b>100 Club</b><small class="ok">Listened ✓ · 2 chapters</small></span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span></div>
+      <div class="row"><span class="num done">✓</span><span class="thumb g2"></span><span class="tt"><b>St Martin’s School of Art</b><small class="ok">Listened ✓ · 2 chapters</small></span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span></div>
+      <div class="row now"><span class="num now">3</span><span class="thumb g3"></span><span class="tt"><b>6 Denmark Street</b><small>Next stop · 0.2 km</small></span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span></div>
+      <div class="row"><span class="num">4</span><span class="thumb g4"></span><span class="tt"><b>The Roxy</b><small>0.6 km away</small></span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span></div>
+      <div class="row"><span class="num">5</span><span class="thumb g5"></span><span class="tt"><b>The Rock Garden</b><small>0.9 km away</small></span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span></div>
+      <div class="row"><span class="num">6</span><span class="thumb g2"></span><span class="tt"><b>Notre Dame Hall</b><small>1.1 km away</small></span><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span></div>
+      <div class="miniplayer">
+        <div class="mp-top"><span class="thumb g3"></span><span class="tt"><b>6 Denmark Street</b><small>Chapter 1 of 2 · The place</small></span><span class="mp-btn"><svg viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg></span></div>
+        <div class="mp-time"><span>0:24</span><span class="bar"><i></i></span><span>-0:43</span></div>
+      </div>
+    </div></div>
+  </div>
+</div></section>
 
-    <div class="sub">
-      Coming soon to London
+<section class="section alt"><div class="wrap">
+  <div class="section-head">
+    <div class="label">Three ways in</div>
+    <h2 style="margin-top:12px">Everything a music fan needs, in one place.</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="ic" style="background:rgba(255,176,32,0.14)"><svg viewBox="0 0 24 24" fill="none" stroke="#FFB020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M21 15a2 2 0 0 1-2 2h-1v-6h1a2 2 0 0 1 2 2zM3 15a2 2 0 0 0 2 2h1v-6H5a2 2 0 0 0-2 2z"/></svg></div>
+      <h3>Audio walking tours</h3>
+      <p>Real stories, told at the real doors: the gigs, the shops, the studios and the people. Walk at your own pace and press play when you arrive.</p>
+      <div class="stat">Punk Revolution · <span>35 stops, 53 minutes of stories</span></div>
+    </div>
+    <div class="card">
+      <div class="ic" style="background:rgba(255,92,170,0.14)"><svg viewBox="0 0 24 24" fill="none" stroke="#FF5CAA" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/><path d="M12 3.5a8.5 8.5 0 0 1 6 2.5"/></svg></div>
+      <h3>Record stores</h3>
+      <p>London’s independent record shops on one map, with what each one specialises in, opening hours and directions from where you stand.</p>
+      <div class="stat">Free for everyone</div>
+    </div>
+    <div class="card">
+      <div class="ic" style="background:rgba(48,209,88,0.14)"><svg viewBox="0 0 24 24" fill="none" stroke="#30D158" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></div>
+      <h3>Live music tonight</h3>
+      <p>Hundreds of gigs across London’s venues, by night, venue and genre, with a direct link to tickets. Some of them in the very rooms the tours talk about.</p>
+      <div class="stat">Updated every day</div>
     </div>
   </div>
+</div></section>
 
+<section class="section"><div class="wrap">
+  <div class="tour-card">
+    <div class="tour-art tour-art-css"><img src="assets/logo-mark-256.png" alt=""><div class="years">1975<span>–</span>1979</div><div class="where">Soho · King’s Road · Notting Hill · Camden · Islington</div></div>
+    <div class="tour-body">
+      <div class="eyebrow">The first tour</div>
+      <h2 style="margin-top:12px">Punk Revolution</h2>
+      <p>Between 1975 and 1979, a few hundred young people in London tore up the rules of rock music. Follow the story from the very first Sex Pistols gig to the studios where punk’s greatest albums were made, through Soho, the King’s Road, Notting Hill, Camden and Islington.</p>
+      <div class="chips"><span class="chip amber">35 stops</span><span class="chip">53 min of audio</span><span class="chip">Soho → Islington</span><span class="chip">Finale unlocks at the end</span></div>
+      <a class="btn btn-amber" href="tour/punk-revolution/index.html">Explore the tour</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="section alt"><div class="wrap">
+  <div class="section-head"><div class="label">How it works</div><h2 style="margin-top:12px">Pick a tour. Walk. Listen.</h2></div>
+  <div class="steps">
+    <div class="step"><h3>Choose your walk</h3><p>Start with Punk Revolution. More London tours are on the way, then more cities.</p></div>
+    <div class="step"><h3>Follow the map</h3><p>The map shows your route and the next stop. Every stop has the story in text as well as audio.</p></div>
+    <div class="step"><h3>Press play at the door</h3><p>Hear what happened right where you’re standing, then carry on to the next stop, or the nearest record shop.</p></div>
+  </div>
+</div></section>
+
+<section class="closing"><div class="wrap" style="position:relative">
+  <h2>London’s music history is on every corner.</h2>
+  <p class="lead">TuneWalk is coming soon to the App Store. Follow us to hear first.</p>
+  <div class="hero-cta">
+    <span class="btn btn-soon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.86-.76-1.47.02-2.83.86-3.59 2.17-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.83-1.22 1.17-2.4 1.19-2.46-.03-.01-2.28-.87-2.3-3.46zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></svg> Coming soon</span>
+    <a class="btn btn-dark" href="https://www.instagram.com/tunewalk.app/">Follow on Instagram</a>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div class="foot">
+    <div>
+      <a class="brand" href="index.html"><img src="assets/logo-mark-256.png" alt="">TuneWalk</a>
+      <div class="social">
+  <a href="https://www.instagram.com/tunewalk.app/" aria-label="TuneWalk on Instagram"><svg viewBox="0 0 24 24"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM21.9 8.2c-.1-1.6-.4-3-1.6-4.2S17.4 2.4 15.8 2.3c-1.6-.1-6.5-.1-8.1 0-1.6.1-3 .4-4.2 1.6S2.4 6.6 2.3 8.2c-.1 1.6-.1 6.5 0 8.1.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.5.1 8.1 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.5 0-8.1zM19.8 18c-.3.9-1 1.6-1.9 1.9-1.3.5-4.4.4-5.9.4s-4.6.1-5.9-.4c-.9-.3-1.6-1-1.9-1.9-.5-1.3-.4-4.4-.4-5.9s-.1-4.6.4-5.9c.3-.9 1-1.6 1.9-1.9 1.3-.5 4.4-.4 5.9-.4s4.6-.1 5.9.4c.9.3 1.6 1 1.9 1.9.5 1.3.4 4.4.4 5.9s.1 4.6-.4 5.9z"/></svg></a>
+  <a href="https://www.tiktok.com/@tunewalkapp" aria-label="TuneWalk on TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 2h-3.3v13.2a2.9 2.9 0 1 1-2.1-2.8V9.1a6.2 6.2 0 1 0 5.4 6.1V8.6a7.6 7.6 0 0 0 4.4 1.4V6.7a4.4 4.4 0 0 1-4.4-4.4V2z"/></svg></a>
+  <a href="https://x.com/TuneWalkApp" aria-label="TuneWalk on X"><svg viewBox="0 0 24 24"><path d="M17.8 2.5h3.3l-7.2 8.2 8.5 11.2h-6.6l-5.2-6.8-6 6.8H1.3l7.7-8.8L.9 2.5h6.8l4.7 6.2 5.4-6.2zm-1.2 17.4h1.8L6.6 4.4H4.6l12 15.5z"/></svg></a>
+</div>
+    </div>
+    <div class="foot-links">
+      <a href="tour/punk-revolution/index.html">Punk Revolution</a>
+      <a href="faq/index.html">FAQ &amp; support</a>
+      <a href="privacy/index.html">Privacy</a>
+      <a href="terms/index.html">Terms</a>
+      <a href="mailto:support@tunewalk.app">support@tunewalk.app</a>
+    </div>
+  </div>
+  <div class="legal">© 2026 Verum Lux Ltd, trading as Verum Lux Labs. Registered in England and Wales, company no. 16829396.<br>TuneWalk is a registered UK trademark of Verum Lux Ltd.</div>
+</div></footer>
 </body>
 </html>
