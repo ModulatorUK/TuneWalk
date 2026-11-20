@@ -136,6 +136,17 @@ h3 { font-size: 21px; font-weight: 800; letter-spacing: -0.2px; }
 .g4 { background: linear-gradient(135deg, #3d0f2e, #ff5caa); }
 .g5 { background: linear-gradient(135deg, #0f3d2a, #30d158); }
 
+/* real app screenshot inside the phone */
+.screen.shot { background: #0b0f1a; }
+.screen.shot img { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: calc(100% - 26px); object-fit: cover; object-position: center bottom; display: block; }
+.screen.shot::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 70px; background: linear-gradient(#0b0f1a 40%, rgba(11,15,26,0)); z-index: 1; }
+.statusbar { position: absolute; top: 14px; left: 30px; right: 26px; display: flex; justify-content: space-between; align-items: center; color: #fff; font-size: 13px; font-weight: 700; z-index: 2; }
+.sb-icons { display: flex; gap: 6px; align-items: center; }
+.sb-icons .sig { width: 16px; height: 10px; background: linear-gradient(90deg,#fff 0 18%,transparent 18% 27%,#fff 27% 45%,transparent 45% 54%,#fff 54% 72%,transparent 72% 82%,#fff 82%); clip-path: polygon(0 100%,100% 0,100% 100%); }
+.sb-icons .bat { width: 22px; height: 11px; border-radius: 3px; border: 1.5px solid rgba(255,255,255,0.6); position: relative; }
+.sb-icons .bat::after { content: ""; position: absolute; inset: 1.5px; border-radius: 1.5px; background: #fff; }
+.screen.shot .island { z-index: 3; }
+
 /* ---------- three features ---------- */
 .section { padding: 84px 0; }
 .section.alt { background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0)); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
