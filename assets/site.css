@@ -253,3 +253,11 @@ footer { border-top: 1px solid var(--border); padding: 40px 0 48px; color: var(-
   .nav-links .hide-sm { display: none; }
   .hero { padding-top: 44px; }
 }
+
+/* footer contact block */
+.foot-contact { min-width: 260px; }
+.foot-contact .fc-title { color: var(--text); font-weight: 800; font-size: 15px; margin-bottom: 10px; }
+.foot-contact .fc-row { display: flex; gap: 12px; align-items: baseline; margin-top: 6px; }
+.foot-contact .fc-row span { color: var(--text-3); font-size: 13px; font-weight: 600; width: 118px; flex: none; }
+.foot-contact .fc-row a { color: var(--accent); font-weight: 700; }
+.foot-contact .fc-row a:hover { text-decoration: underline; }
