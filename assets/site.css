@@ -221,10 +221,25 @@ footer { border-top: 1px solid var(--border); padding: 40px 0 48px; color: var(-
 .tour-hero { position: relative; padding: 64px 0 40px; overflow: hidden; }
 .tour-hero::before { content: ""; position: absolute; right: -200px; top: -160px; width: 720px; height: 720px; background: radial-gradient(closest-side, rgba(255,176,32,0.18), rgba(255,176,32,0)); pointer-events: none; }
 .tour-hero .lead { max-width: 640px; margin: 18px 0 26px; }
+.stops-toggle { margin-top: 6px; }
+.stops-toggle summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; padding: 14px 20px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); font-weight: 800; color: var(--text); }
+.stops-toggle summary::-webkit-details-marker { display: none; }
+.stops-toggle summary:hover { border-color: rgba(255,176,32,0.55); }
+.stops-toggle summary svg { width: 18px; height: 18px; fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; transition: transform .2s; }
+.stops-toggle[open] summary svg { transform: rotate(180deg); }
+.stops-toggle .st-close, .stops-toggle[open] .st-open { display: none; }
+.stops-toggle[open] .st-close { display: inline; }
+.stops-toggle[open] .stop-list { margin-top: 18px; animation: stopsIn .25s ease; }
+@keyframes stopsIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 .stop-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 .stop-list li { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); font-weight: 700; }
 .stop-list li span { width: 28px; height: 28px; border-radius: 14px; background: var(--raised); display: grid; place-items: center; font-size: 12px; font-weight: 800; color: var(--text-2); flex: none; }
-.stop-list li small { margin-left: auto; color: var(--text-3); font-weight: 600; font-size: 13px; }
+.stop-list li > div { min-width: 0; }
+.stop-list li b { display: block; font-weight: 800; }
+.stop-list li small { display: block; color: var(--text-3); font-weight: 500; font-size: 14px; margin-top: 2px; line-height: 1.35; }
+.stop-area { margin: 26px 0 12px; color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; }
+.stops-toggle[open] .stop-area:first-of-type { margin-top: 22px; }
+.stops-toggle[open] .stop-list { margin-top: 0; }
 .intro-text { color: #D5D6DA; font-size: 18px; max-width: 720px; }
 
 /* ---------- mobile ---------- */
